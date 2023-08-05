@@ -1,6 +1,6 @@
 # biz_card
 
-A new Flutter project.
+This is a business card UI mobile application developed using flutter.
 
 ## Getting Started
 
