@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 void main() =>  runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,11 +13,14 @@ class MyApp extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            CircleAvatar(
+            // Image
+            const CircleAvatar(
               radius: 50,
               backgroundImage: AssetImage('images/Cashkid.jpg'),
             ),
-            Text(
+
+            // Name
+            const Text(
               'Balogun Murtadho',
               style: TextStyle(
                 fontFamily: 'Pacifico',
@@ -27,6 +29,8 @@ class MyApp extends StatelessWidget {
                 color: Colors.white,
               ),
               ),
+
+              // Position
               Text(
                 'FLUTTER DEVELOPER',
                 style: TextStyle(
@@ -36,6 +40,8 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   fontFamily: 'Source Sans Pro',)
             ),
+
+            // Divider
             SizedBox(
               height: 20,
               width: 150,
@@ -43,10 +49,12 @@ class MyApp extends StatelessWidget {
                 color: Colors.teal.shade100,
               ),
             ),
+
+            // Phone Number
             Card(
-              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              margin:const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
               child: ListTile(
-              leading:  Icon(
+              leading: const Icon(
                   Icons.phone,
                   color: Colors.teal,
                 ),
@@ -60,10 +68,12 @@ class MyApp extends StatelessWidget {
                 ),
                 ),
             ),
+
+            // Email
             Card(
-                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                margin:const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                 child: ListTile(
-                  leading: Icon(
+                  leading:const Icon(
                     Icons.mail,
                     color: Colors.teal,
                   ),
@@ -77,10 +87,12 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
+
+              // Location
               Card(
-                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                margin:const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                 child: ListTile(
-                  leading: Icon(
+                  leading:const Icon(
                     Icons.location_on_sharp,
                     color: Colors.teal,
                   ),
@@ -96,7 +108,7 @@ class MyApp extends StatelessWidget {
               ),
               ],
             ),
-            ),
+          ),
         ),
       );
   }
